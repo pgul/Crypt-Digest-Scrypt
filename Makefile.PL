@@ -8,7 +8,7 @@ WriteMakefile(
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
     ABSTRACT_FROM     => 'lib/Crypt/Digest/Scrypt.pm', # retrieve abstract from module
     AUTHOR            => 'Pavel Gulchuk <gul@gul.kiev.ua>',
-    LIBS              => [''], # e.g., '-lm'
+    LIBS              => ['-lcrypto'], # e.g., '-lm'
     DEFINE            => '', # e.g., '-DHAVE_SOMETHING'
     INC               => '-I.', # e.g., '-I. -I/usr/include/other'
 	# Un-comment this if you add C files to link with later:

@@ -5,7 +5,7 @@ use warnings;
 our $VERSION = '0.01';
 
 use Exporter qw(import);
-our @EXPORT_OK = qw(scrypt);
+our @EXPORT_OK = qw(scrypt_1024_1_1_256);
 
 require XSLoader;
 XSLoader::load('Crypt::Digest::Scrypt', $VERSION);
@@ -19,35 +19,21 @@ Crypt::Digest::Scrypt - Perl extension for Scrypt key deviation function
 
 =head1 SYNOPSIS
 
-  ### Functional interface:
-  use Crypt::Digest::Scrypt qw(scrypt);
+  use Crypt::Digest::Scrypt qw(scrypt_1024_1_1_256);
 
   # calculate digest from string/buffer
-  $scrypt_raw = scrypt('data string');
-
-  ### OO interface:
-  use Crypt::Digest::Scrypt;
-  $d = Crypt::Digest::Scrypt->new;
-  $result_raw  = $d->digest;     # raw bytes
+  $scrypt_raw = scrypt_1024_1_1_256('data string');
 
 =head1 DESCRIPTION
 
-  Provides an interface to the Scrypt digest algorithm compatible with Litecoin
+  Provides an interface to the Scrypt digest algorithm compatible with Litecoin.
   Written in XS.
 
 =head1 FUNCTIONS
 
 =over
 
-=item B<scrypt>
-
-=back
-
-=head1 METHODS
-
-=over
-
-=item B<new($text)>
+=item B<scrypt_1024_1_1_256>
 
 =back
 
