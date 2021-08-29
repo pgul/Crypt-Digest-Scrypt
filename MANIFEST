@@ -2,7 +2,6 @@ Changes
 Scrypt.xs
 Makefile.PL
 MANIFEST
-ppport.h
 README
 t/Crypt-Digest-Scrypt.t
 lib/Crypt/Digest/Scrypt.pm

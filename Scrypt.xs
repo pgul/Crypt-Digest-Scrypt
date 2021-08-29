@@ -2,8 +2,6 @@
 #include "perl.h"
 #include "XSUB.h"
 
-#include "ppport.h"
-
 MODULE = Crypt::Digest::Scrypt		PACKAGE = Crypt::Digest::Scrypt		
 
 PROTOTYPES: DISABLE
