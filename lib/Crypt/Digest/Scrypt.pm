@@ -4,6 +4,9 @@ use warnings;
 
 our $VERSION = '0.01';
 
+use Exporter qw(import);
+our @EXPORT_OK = qw(scrypt);
+
 require XSLoader;
 XSLoader::load('Crypt::Digest::Scrypt', $VERSION);
 

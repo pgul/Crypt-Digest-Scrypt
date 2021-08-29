@@ -2,18 +2,24 @@
 #include "perl.h"
 #include "XSUB.h"
 
+#include <string.h>
+
+void scrypt_core(const char *data, char *hash)
+{
+    memset(hash, 'Q', 32);
+    strncpy(hash+1, data, 30);
+}
+
 MODULE = Crypt::Digest::Scrypt		PACKAGE = Crypt::Digest::Scrypt		
 
 PROTOTYPES: DISABLE
 
-void scrypt(char *class, char *data)
+void scrypt(const char *data)
 PPCODE:
 {
-    HV *pv = newHV();
+    char hash[32];
+    scrypt_core(data, hash);
+    SV *pv = newSVpvn(hash, sizeof(hash));
     SvPOK_only (pv);
-    scrypt_core(pv, data);
-
-    SV *Hash = sv_bless ( newRV_noinc ((SV *)pv), gv_stashpv (class, 1));
-    XPUSHs(sv_2mortal(Hash));
+    XPUSHs(sv_2mortal(pv));
 }
-
