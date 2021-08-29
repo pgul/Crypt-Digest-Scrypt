@@ -3,5 +3,7 @@
 Scrypt.c
 Changes
 Makefile
+pm_to_blib
+Scrypt.bs
 MYMETA.*
 blib/*
