@@ -15,7 +15,7 @@ __END__
 
 =head1 NAME
 
-Crypt::Digest::Scrypt - Perl extension for Scrypt key deviation function
+Crypt::Digest::Scrypt - Perl extension for Scrypt key derivation function
 
 =head1 SYNOPSIS
 
