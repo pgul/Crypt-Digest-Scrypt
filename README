@@ -25,7 +25,7 @@ DEPENDENCIES
 
 This module requires these other modules and libraries:
 
-  Crypt::Digest::SHA256
+  libcrypto.so and openssl/sha.h from libssl-dev or openssl-libs-dev
 
 COPYRIGHT AND LICENCE
 
