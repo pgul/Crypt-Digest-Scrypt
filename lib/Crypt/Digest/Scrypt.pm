@@ -15,7 +15,7 @@ __END__
 
 =head1 NAME
 
-Crypt::Digest::Scrypt - Perl extension for Scrypt key derivation function
+Crypt::Digest::Scrypt - Scrypt key derivation function
 
 =head1 SYNOPSIS
 
@@ -27,7 +27,6 @@ Crypt::Digest::Scrypt - Perl extension for Scrypt key derivation function
 =head1 DESCRIPTION
 
   Provides an interface to the Scrypt digest algorithm compatible with Litecoin.
-  Written in XS.
 
 =head1 FUNCTIONS
 
