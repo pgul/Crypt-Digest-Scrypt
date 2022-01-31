@@ -2,7 +2,7 @@ package Crypt::Digest::Scrypt;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Exporter qw(import);
 our @EXPORT_OK = qw(scrypt_1024_1_1_256);
