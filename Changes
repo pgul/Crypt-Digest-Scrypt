@@ -1,0 +1,6 @@
+Revision history for Perl extension Crypt::Digest::Scrypt.
+
+0.01  Sun Aug 29 15:44:30 2021
+	- original version; created by h2xs 1.23 with options
+		-An Crypt::Digest::Scrypt
+
